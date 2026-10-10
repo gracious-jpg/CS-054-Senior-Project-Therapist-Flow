@@ -32,11 +32,11 @@ Define required test types, how to run tests, expected coverage thresholds, and 
 
 ## Definition of Done
 
-List the checks a change must pass before it merges (tests, review, docs updated, lint and security checks), each with the CI job, hook, or test that enforces it. For a gate not built yet, name the sprint it lands in and its owner.
+A change must be compatible with our current program, reviewed by at least one team member, and include any needed documentation updates before it is merged. It also must pass formatting, lint, and security checks. Each requirement would have a CI job to enforce it. For any check that’s not built yet, our team would identify its owner, the sprint when it will be added, and how it will be checked manually. 
 
 ## Contribution Norm
 
-State the floor (every contributor lands at least one piece of accepted work per sprint), where each kind of work lives (the repository, the issue tracker, the partner's system), and what accepted means for each.
+Every team member should complete at least one piece of work in every Sprint. The overall workload should be distributed evenly. Coding, testing, designing, or documentation all count as contributions, and should be recorded in the team’s Githun. Work is accepted when it meets the Definition of Done and is approved by the quality manager.
 
 ## Pull Requests & Reviews
 
