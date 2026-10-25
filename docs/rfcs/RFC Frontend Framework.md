@@ -186,11 +186,10 @@ The frontend framework we select does not independently determine ownership of o
 
 Our project partner has encouraged the use of artificial intelligence for documentation and development.
 
-Our team has created a context file intended to establish instructions for AI tools used during development. This file helps provide relevant project information and development expectations.
+We have created a context file for any and all AI tools used in development. The RFC draft was provided to ChatGPT for research, grammar, and organization purposes only. 
 
-For this RFC, ChatGPT was used to assist with research, grammar, and document organization. The project's requirements, framework decision, and initial analysis were provided as context.
+To ensure any RFC decisions are decided by humans rather than AI, we intend to validate our decision(s) through in-person communication.
 
-The AI tool was not authorized to make the final framework decision on behalf of our team.
 
 ### Existing Checks and Validation
 
