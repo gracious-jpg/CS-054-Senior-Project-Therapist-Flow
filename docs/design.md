@@ -1,6 +1,3 @@
 The system is not implemented yet.
 
-Deployment: Our team is focusing on building and validating the therapist scheduler prototype
-            before finalizing a production target. Instead of a deployed website, we propose delivering a
-            locally runnable prototype with clear setup instructions and working features that users can test 
-            and provide feedback on. 
+Deployment: Our team has not yet selected a hosting platform for its initial working version. We plan to make it accessible to our project partner and instructors through a web URL, allowing them to try the implemented features and provide feedback. Once we select a platform, we will assign responsibility for the hosting account. Our project partner has agreed that the therapist scheduler will be a web application.
