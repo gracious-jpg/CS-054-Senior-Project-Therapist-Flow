@@ -1,11 +1,18 @@
-"""Minimal TherapistFlow FastAPI scaffold."""
-
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="TherapistFlow")
+app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["GET"],
+)
 
 @app.get("/health")
-def health_check():
-    """Return a lightweight signal that the API is responding."""
+def health():
     return {"status": "ok"}
+
+@app.get("/api/hello")
+def hello():
+    return {"message": "Hello from FastAPI!"}
