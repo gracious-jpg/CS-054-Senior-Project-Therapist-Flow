@@ -1,3 +1,25 @@
-The system is not implemented yet.
+# Design
 
-Deployment: Our team has not yet selected a hosting platform for its initial working version. We plan to make it accessible to our project partner and instructors through a web URL, allowing them to try the implemented features and provide feedback. Once we select a platform, we will assign responsibility for the hosting account. Our project partner has agreed that the therapist scheduler will be a web application.
+## Overview
+
+## Architecture
+![C4 context diagram](./diagrams/context.png)
+- Web app (React, Netlify): schedules, surveys, workload analysis, action plans.
+- API (FastAPI, Oracle Cloud VM): scheduling rules, workload calculations, AI integration.
+- SQLite 3, on the VM: therapist and administrator accounts, sessions, daily survey responses, therapist preferences.
+- AI (model TBD): suggests action plans based on daily survey responses.
+
+## Interfaces
+
+## Data
+
+
+## Deployment
+
+
+## Open questions
+
+## Deferred decisions
+
+
+
