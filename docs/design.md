@@ -1,6 +1,9 @@
 # Design
 
 ## Overview
+TherapistFlow helps therapists and supervisors spot when a clinician’s workload is becoming difficult to manage. Therapists can view their schedules, complete daily check-ins, and see how their workload is classified as safe, warning, or danger. Supervisors can use a dashboard to identify who may need support or a scheduling adjustment. These categories describe workload, not a therapist’s health or ability to practice.
+
+The first release will focus on scheduling, daily surveys, and workload tracking. Workload calculations will work without an AI service. AI-generated action plans are a later addition.
 
 ## Architecture
 ![C4 context diagram](./diagrams/context.png)
@@ -10,12 +13,14 @@
 - AI (model TBD): suggests action plans based on daily survey responses.
 
 ## Interfaces
-
+The React frontend will send HTTPS requests to the FastAPI backend and exchange data in JSON. FastAPI will validate requests, enforce access permissions, and calculate workload results. The frontend will display those results and will not connect directly to SQLite.
 ## Data
-
+SQLite stores therapist and administrator accounts, scheduled sessions, daily survey responses, and therapist preferences. Sessions, responses, and preferences are linked to the therapist’s account.
 
 ## Deployment
+Netlify hosts the React frontend. FastAPI and SQLite run on an Oracle Cloud VM.
 
+After deployment, submit a test survey from the frontend and reload it to verify that the API saved it to SQLite.
 
 ## Open questions
 How will therapist and administrator accounts be created and managed?
